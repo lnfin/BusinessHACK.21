@@ -56,7 +56,7 @@ def get_laser_point(name):
 
 if __name__ == '__main__':
     print('Start to frames video')
-    frame_capture(r'C:\Users\Hakaton\Desktop\Хакатон\Кейс 1. Магнитострикция и лазеры\дилатометр(2).mp4')
+    frame_capture('дилатометр(2).mp4')
     print('Done!\n Laser position detection begins...')
 
     files = os.listdir('frames/')
