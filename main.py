@@ -1,13 +1,20 @@
-data = open('data\\gamma_observ_dat.csv', 'r')
+import matplotlib.pyplot as plt
+
+data = open('res.csv', 'r')
 data = data.readlines()
-lst = []
-data = data[1:]
+prev = 0
+x = []
+y = []
 for i in data:
-    a = ''
-    b = i.split(',')
-    a += ';'.join(b[1:4])
-    dt = open(f'data\{b[-1][:-1]}', 'r')
-    for j in dt:
-        lst.append(a + ';' + ';'.join(j.split()) + '\n')
-file = open('res.csv', 'w')
-file.writelines(lst)
+    if i[:3] != prev:
+        y.append([])
+        x.append([])
+    a = i.split(';')
+    y[-1].append(float(a[-1]))
+    x[-1].append(float(a[-2]))
+    prev = i[:3]
+for i in range(25):
+    for j in range(4):
+        plt.plot(x[j + i], y[j + i])
+    plt.savefig(f'{i + 1}.png')
+    plt.close()
