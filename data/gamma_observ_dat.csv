@@ -1,0 +1,101 @@
+�,city,lat,lng,labid
+0,Tokyo,35.685,139.7514,out0
+1,New York,40.6943,-73.9249,out1
+2,Mexico City,19.4424,-99.131,out2
+3,Mumbai,19.017,72.857,out3
+4,São Paulo,-23.5587,-46.625,out4
+5,Delhi,28.67,77.23,out5
+6,Shanghai,31.2165,121.4365,out6
+7,Kolkata,22.495,88.3247,out7
+8,Los Angeles,34.1139,-118.4068,out8
+9,Dhaka,23.7231,90.4086,out9
+10,Buenos Aires,-34.6025,-58.3975,out10
+11,Karachi,24.87,66.99,out11
+12,Cairo,30.05,31.25,out12
+13,Rio de Janeiro,-22.925,-43.225,out13
+14,Ōsaka,34.75,135.4601,out14
+15,Beijing,39.9289,116.3883,out15
+16,Manila,14.6042,120.9822,out16
+17,Moscow,55.7522,37.6155,out17
+18,Istanbul,41.105,29.01,out18
+19,Paris,48.8667,2.3333,out19
+20,Seoul,37.5663,126.9997,out20
+21,Lagos,6.4433,3.3915,out21
+22,Jakarta,-6.1744,106.8294,out22
+23,Guangzhou,23.145,113.325,out23
+24,Chicago,41.8373,-87.6862,out24
+25,London,51.5,-0.1167,out25
+26,Lima,-12.048,-77.0501,out26
+27,Tehran,35.6719,51.4243,out27
+28,Kinshasa,-4.3297,15.315,out28
+29,Bogotá,4.5964,-74.0833,out29
+30,Shenzhen,22.5524,114.1221,out30
+31,Wuhan,30.58,114.27,out31
+32,Hong Kong,22.305,114.185,out32
+33,Tianjin,39.13,117.2,out33
+34,Chennai,13.09,80.28,out34
+35,Taipei,25.0358,121.5683,out35
+36,Bengalūru,12.97,77.56,out36
+37,Bangkok,13.75,100.5166,out37
+38,Lahore,31.56,74.35,out38
+39,Chongqing,29.565,106.595,out39
+40,Miami,25.7839,-80.2102,out40
+41,Hyderabad,17.4,78.48,out41
+42,Dallas,32.7936,-96.7662,out42
+43,Santiago,-33.45,-70.667,out43
+44,Philadelphia,40.0077,-75.1339,out44
+45,Belo Horizonte,-19.915,-43.915,out45
+46,Madrid,40.4,-3.6834,out46
+47,Houston,29.7869,-95.3905,out47
+48,Ahmadābād,23.0301,72.58,out48
+49,Ho Chi Minh City,10.78,106.695,out49
+50,Washington,38.9047,-77.0163,out50
+51,Atlanta,33.7627,-84.4225,out51
+52,Toronto,43.7,-79.42,out52
+53,Singapore,1.293,103.8558,out53
+54,Luanda,-8.8383,13.2344,out54
+55,Baghdad,33.3386,44.3939,out55
+56,Barcelona,41.3833,2.1834,out56
+57,Hāora,22.5804,88.3299,out57
+58,Shenyang,41.805,123.45,out58
+59,Khartoum,15.5881,32.5342,out59
+60,Pune,18.53,73.85,out60
+61,Boston,42.3188,-71.0846,out61
+62,Sydney,-33.92,151.1852,out62
+63,Saint Petersburg,59.939,30.316,out63
+64,Chittagong,22.33,91.8,out64
+65,Dongguan,23.0489,113.7447,out65
+66,Riyadh,24.6408,46.7727,out66
+67,Hanoi,21.0333,105.85,out67
+68,Guadalajara,20.67,-103.33,out68
+69,Melbourne,-37.82,144.975,out69
+70,Alexandria,31.2,29.95,out70
+71,Chengdu,30.67,104.07,out71
+72,Rangoon,16.7834,96.1667,out72
+73,Phoenix,33.5722,-112.0891,out73
+74,Xi’an,34.275,108.895,out74
+75,Porto Alegre,-30.05,-51.2,out75
+76,Sūrat,21.2,72.84,out76
+77,Hechi,23.0965,109.6091,out77
+78,Abidjan,5.32,-4.04,out78
+79,Brasília,-15.7833,-47.9161,out79
+80,Ankara,39.9272,32.8644,out80
+81,Monterrey,25.67,-100.33,out81
+82,Yokohama,35.32,139.58,out82
+83,Nanjing,32.05,118.78,out83
+84,Montréal,45.5,-73.5833,out84
+85,Guiyang,26.58,106.72,out85
+86,Recife,-8.0756,-34.9156,out86
+87,Seattle,47.6211,-122.3244,out87
+88,Harbin,45.75,126.65,out88
+89,San Francisco,37.7562,-122.443,out89
+90,Fortaleza,-3.75,-38.58,out90
+91,Zhangzhou,24.5204,117.67,out91
+92,Detroit,42.3834,-83.1024,out92
+93,Salvador,-12.97,-38.48,out93
+94,Busan,35.0951,129.01,out94
+95,Johannesburg,-26.17,28.03,out95
+96,Berlin,52.5218,13.4015,out96
+97,Algiers,36.7631,3.0506,out97
+98,Rome,41.896,12.4833,out98
+99,Pyongyang,39.0194,125.7547,out99
