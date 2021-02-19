@@ -1,6 +1,8 @@
 import cv2
 from PIL import Image
+from constants import *
 import os
+import csv
 
 DELTA = 25
 
@@ -16,7 +18,8 @@ def frame_capture(path) -> None:
             cv2.imwrite(f'frames/frame_{count}.jpg', image)
         except cv2.error as e:
             print(e)
-            break
+            pass
+    return count
 
 
 def get_laser_point(name):
@@ -50,16 +53,53 @@ def get_laser_point(name):
         pixels[i[0], i[1]] = (0, 0, 255)
 
     pixels[x, y] = (255, 0, 0)
-    print(x, y)
-    #image.save('output/' + name)
+    return x, y
+    # image.save('output/' + name)
+
+
+def save_data(data, name='frames_data_.csv'):
+    with open(name, mode='ab') as file:
+        for line in data:
+            file.write(bytes(', '.join(map(str, line)) + '\n', encoding='UTF-8'))
+
+
+"""def get_positions_from_csv(name='frames_data_.csv'):
+    with open(name, mode='r') as file:
+        min_x, min_y = -1, -1
+        max_x, max_y = -1, -1
+        for line in file:
+            x, y = map(int, line.split(', '))"""
+
+
+
 
 
 if __name__ == '__main__':
-    print('Start to frames video')
-    frame_capture('дилатометр 2.mp4')
-    print('Done!\n Laser position detection begins...')
+    """print('Start to frames video')
+            count = frame_capture('video.mp4')
+            print('Done!\n Laser position detection begins...')"""
+    count = 2143
+    min_x, min_y = 99999999999, 9999999999999
+    max_x, max_y = -1, -1
+    for file in range(1, count + 1):
+        print(f'{file}/{count}', end=': ')
+        file = 'frame_' + str(file) + '.jpg'
+        x, y = get_laser_point(file)
+        print(x, y)
+        save_data(((x, y),))
+        min_x, min_y = 99999999999, 9999999999999
+        max_x, max_y = -1, -1
+        if min_x > x:
+            min_x = x
+        elif max_x < x:
+            max_x = x
+        if min_y > y:
+            min_y = y
+        elif max_y < y:
+            max_y = y
 
-    files = os.listdir('frames/')
-    for i, file in enumerate(files):
-        print(f'{i}/{len(files)}: ' + file)
-        get_laser_point(file)
+    print('\n')
+    print(max_x, max_y)
+    print(min_x, min_y)
+    file = open('answer.csv', mode='w')
+    file.write(', '.join(map(str, (X_ZERO, Y_ZERO, max_x, max_y, MIKROMETR, abs((max_y - Y_TEN) / MIKROMETR)))))
